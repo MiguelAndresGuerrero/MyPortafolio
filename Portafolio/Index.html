@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miguel Guerrero</title>
+    <link rel="icon" href="./media/React_logo.png">
+    <link rel="stylesheet" href="./Style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="#SobreMi">Sobre mí</a></li>
+                <li><a href="#Proyectos">Proyectos</a></li>
+                <li><a href="#Contacto">Contacto</a></li>
+            </ul>
+            <button id="toggle-dark-mode" class="toggle-btn" onclick="toggleDarkMode()" aria-label="Alternar modo oscuro">
+                <img src="./media/Light-Moon.png" alt="Luna clara" width="40" id="light-mode">
+                <img src="./media/Blue-Moon.png" alt="Luna azul" width="40" id="dark-mode" style="display: none;">
+                <span id="mode-text">Modo Oscuro</span>
+            </button>
+        </nav>
+    </header>
+
+    <section id="SobreMi">
+        <h2>Sobre mí</h2>
+        <div class="SobreMi">
+            <img src="./media/Perfil.jpg" alt="Perfil de Miguel Guerrero">
+            <p>¡Hola! Soy Miguel Guerrero. Me apasiona la programación y el desarrollo web, y me encanta aprender cosas nuevas cada día. 
+                Actualmente estoy aprendiendo Java y mejorando mis habilidades diariamente. También cuento con experiencia en Java y MySQL. 
+            </p>
+        </div>
+    </section>
+    
+    <section id="Proyectos">
+        <h2>Proyectos</h2>
+        <div class="proyecto-container">
+            <div class="proyecto">
+                <img src="./media/Imagen_Proyecto1.jpg" alt="Proyecto 1 - Notas Vibrantes">
+                <h3>Notas Vibrantes</h3>
+                <p>Proyecto en Java que gestiona una base de datos llamada "Notas Vibrantes". Permite almacenar, modificar y eliminar registros 
+                    mediante MySQL. Desarrollado en Apache NetBeans y requiere JDK 8.</p>
+                <a href="https://github.com/MiguelAndresGuerrero/Java_NotasVibrantes_DDBB">Ver en GitHub</a>
+            </div>
+            <div class="proyecto">
+                <img src="./media/Imagen_Proyecto2.png" alt="Proyecto 2 - Rick and Morty API">
+                <h3>Rick and Morty - API</h3>
+                <p>Aplicación web creada con HTML, CSS y JavaScript que utiliza la API de Rick and Morty para mostrar personajes, episodios y sus imágenes.</p>
+                <a href="https://github.com/MiguelAndresGuerrero/RickAndMortyAPI">Ver en GitHub</a>
+            </div>
+            <div class="proyecto">
+                <img src="./media/Imagen_Proyecto3.png" alt="Proyecto 3 - Movie API">
+                <h3>Movie - API</h3>
+                <p>Aplicación web en HTML, CSS y JavaScript que consume una API de películas. Permite realizar búsquedas en tiempo real y visualizar información detallada.</p>
+                <a href="https://github.com/MiguelAndresGuerrero/Movies_API.git">Ver en GitHub</a>
+            </div>
+            <div class="proyecto">
+                <img src="./media/Imagen_Proyecto4.jpg" alt="Proyecto 4 - Movistar DDBB">
+                <h3>Movistar DDBB</h3>
+                <p>Sistema de base de datos para MOVISTAR diseñado para optimizar procesos y mejorar la relación con los clientes, permitiendo una gestión más eficiente y personalizada.</p>
+                <a href="https://github.com/MiguelAndresGuerrero/DDBB_MOVISTAR">Ver en GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="Lenguajes">
+        <h2>Lenguajes: </h2>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./media/Lenguajes/HTML.png" alt="HTML"></div>
+                <div class="swiper-slide"><img src="./media/Lenguajes/CSS.png" alt="CSS"></div>
+                <div class="swiper-slide"><img src="./media/Lenguajes/JAVASCRIPT.png" alt="JavaScript"></div>
+                <div class="swiper-slide"><img src="./media/Lenguajes/JAVA.png" alt="Java"></div>
+                <div class="swiper-slide"><img src="./media/Lenguajes/MYSQL.png" alt="MySQL"></div>
+                <div class="swiper-slide"><img src="./media/Lenguajes/PYTHON.png" alt="Python"></div>
+                <div class="swiper-slide"><img src="./media/Lenguajes/JSON.png" alt="Json"></div>
+                <div class="swiper-slide"><img src="./media/Lenguajes/SPRINGBOOT.png" alt="SpringBoot"></div>
+                <div class="swiper-slide"><img src="./media/Lenguajes/POSTGRESQL.png" alt="Posgrest"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    
+
+    <footer>
+        <p>&copy; 2025 Miguel Guerrero - Todos los derechos reservados</p>
+        <div class="contact-icons">
+            <a href="mailto:Guerreromiguelmartinez@gmail.com" aria-label="Correo electrónico">
+                <img src="./media/Gmail.png" alt="Gmail">
+            </a>
+            <a href="https://www.linkedin.com/in/miguel-guerrero-martinez-175845310/" target="_blank" aria-label="Perfil de LinkedIn">
+                <img src="./media/Linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/MiguelAndresGuerrero" target="_blank" aria-label="Perfil de GitHub">
+                <img src="./media/GitHub.png" alt="GitHub">
+            </a>
+        </div>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
