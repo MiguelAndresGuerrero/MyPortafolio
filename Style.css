@@ -230,7 +230,7 @@ a:hover {
     margin: 0 auto;
 }
 
-#inicio{
+#inicio {
     width: 96%;
     height: 100vh;
     display: flex;
@@ -258,8 +258,15 @@ a:hover {
 }
 
 @keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-20px); }
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
 }
 
 .texto-sobre-mi {
@@ -467,13 +474,13 @@ a:hover {
 footer {
     background-color: #ffffff;
     border-top: 3px solid #0077cc;
-    box-shadow: 0 -2px 8px rgba(0, 119, 204, 0.3);
+    box-shadow: 0 -2px 8px rgba(0, 119, 204, 0.5);
     padding: 10px 0;
     margin-top: 50px;
     text-align: center;
     font-size: 14px;
     color: #333;
-    transition: background-color 0.3s, box-shadow 0.3s;
+    transition: background-color 0.5s, box-shadow 0.5s;
 }
 
 /* Modo oscuro para el footer */
@@ -494,14 +501,14 @@ footer {
 
 .contact-icons a {
     display: inline-block;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.5s ease-in-out;
 }
 
 /* Tamaño y efecto de los íconos */
 .contact-icons img {
     width: 45px;
     height: 45px;
-    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+    transition: transform 0.5s ease-in-out, filter 0.5s ease-in-out;
 }
 
 /* Efecto hover en modo claro */
@@ -539,9 +546,7 @@ footer {
     position: relative;
     text-align: center;
     padding: 20px;
-    color: black;
     background-color: white;
-    /* Color de fondo del footer */
 }
 
 .footer-animado::before {
@@ -587,14 +592,14 @@ footer {
 .contact-icons a img {
     width: 40px;
     margin: 0 10px;
-    transition: transform 0.3s;
+    transition: transform 0.5s;
 }
 
 .contact-icons a img:hover {
     transform: scale(1.1);
 }
 
-.portada{
+.portada {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -650,12 +655,12 @@ footer {
 /* 🌙 Estilo cuando el modo oscuro está activo */
 .dark-mode .neon-text {
     color: #00ffff;
-    text-shadow: 
-        0 0 5px #00ffff, 
-        0 0 10px #00ffff, 
-        0 0 20px #00ffff, 
-        0 0 40px #0062ff, 
-        0 0 60px #0062ff, 
+    text-shadow:
+        0 0 5px #00ffff,
+        0 0 10px #00ffff,
+        0 0 20px #00ffff,
+        0 0 40px #0062ff,
+        0 0 60px #0062ff,
         0 0 80px #0062ff;
     animation: neon-glow 1.5s infinite alternate;
 }
@@ -666,28 +671,34 @@ footer {
 }
 
 @keyframes parpadeo {
-    from { opacity: 1; }
-    to { opacity: 0.6; }
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0.6;
+    }
 }
 
 
 @keyframes neon-glow {
     0% {
-        text-shadow: 
-            0 0 5px #00ffff, 
-            0 0 10px #00ffff, 
-            0 0 20px #00ffff, 
-            0 0 40px #0062ff, 
-            0 0 60px #0062ff, 
+        text-shadow:
+            0 0 5px #00ffff,
+            0 0 10px #00ffff,
+            0 0 20px #00ffff,
+            0 0 40px #0062ff,
+            0 0 60px #0062ff,
             0 0 80px #0062ff;
     }
+
     100% {
-        text-shadow: 
-            0 0 10px #00ffff, 
-            0 0 20px #00ffff, 
-            0 0 30px #00ffff, 
-            0 0 50px #0062ff, 
-            0 0 70px #0062ff, 
+        text-shadow:
+            0 0 10px #00ffff,
+            0 0 20px #00ffff,
+            0 0 30px #00ffff,
+            0 0 50px #0062ff,
+            0 0 70px #0062ff,
             0 0 100px #0062ff;
     }
 }
@@ -710,9 +721,20 @@ footer {
 
 /* Animación del cursor parpadeante */
 @keyframes blinkCursor {
-    0% { opacity: 1; transform: scale(1); }
-    50% { opacity: 0.5; transform: scale(1.1); }
-    100% { opacity: 0; transform: scale(1); }
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.5;
+        transform: scale(1.1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(1);
+    }
 }
 
 .icono {
@@ -721,16 +743,82 @@ footer {
     animation: flotar 4s infinite alternate ease-in-out;
 }
 
-.flotante1 { top: 25%; left: 5%; }
-.flotante2 { top: 25%; right: 5%; }
-.flotante3 { bottom: 7%; left: 16%; }
-.flotante4 { bottom: 7%; right: 16%; }
-
-@keyframes flotar {
-    from { transform: translateY(0); }
-    to { transform: translateY(-25px); }
+.flotante1 {
+    top: 25%;
+    left: 5%;
 }
 
+.flotante2 {
+    top: 25%;
+    right: 5%;
+}
+
+.flotante3 {
+    bottom: 7%;
+    left: 16%;
+}
+
+.flotante4 {
+    bottom: 7%;
+    right: 16%;
+}
+
+@keyframes flotar {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-25px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .flotante1 {
+        width: 100px;
+    }
+
+    .flotante2 {
+        width: 100px;
+    }
+
+    .flotante3 {
+        width: 100px;
+    }
+
+    .flotante4 {
+        width: 100px;
+    }
+
+    .toggle-btn {
+        bottom: 1rem;
+        right: 1rem;
+    }
+
+    .nav-links li:last-child {
+        display: none;
+    }
+
+    .menu-container {
+        position: relative;
+    }
+    
+    .dropdown-menu {
+        position: relative;
+        bottom: 100%;
+        left: 0;
+        background: #333;
+        padding: 10px;
+        border-radius: 10px;
+        display: none;
+        z-index: 999;
+    }
+    
+    #menu-toggle:checked + .dropdown-menu {
+        display: block;
+    }
+    
+}
 
 #splash-screen {
     position: fixed;
@@ -756,4 +844,261 @@ footer {
 .fade-out {
     opacity: 0;
     pointer-events: none;
+}
+
+.menu-container {
+    position: fixed;
+    top: 1.5rem;
+    right: 10rem;
+}
+
+/* Ocultar checkbox */
+#menu-toggle {
+    display: none;
+}
+
+/* Botón que activa el menú */
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    background: #333;
+    padding: 10px;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    transition: background 0.5s ease;
+}
+
+.menu-icon:hover {
+    background: #333;
+}
+
+/* Menú desplegable (oculto por defecto) */
+/* 🔹 Ocultar los radio buttons */
+.dropdown-menu input {
+    display: none;
+}
+
+/* 🔹 Estilos del menú */
+.dropdown-menu {
+    display: none;
+    background: #333;
+    border-radius: 8px;
+    padding: 10px;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    visibility: hidden;
+    z-index: 999;
+}
+
+/* Mostrar el menú cuando el checkbox está activado */
+#menu-toggle:checked ~ .dropdown-menu {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+}
+
+/* 🔹 Estilos de los botones de color */
+.color-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    transition: background 0.5s ease;
+}
+
+.color-option:hover {
+    opacity: 0.8;
+}
+
+/* 🎨 Aplicar los colores */
+.color-1 {
+    background-color: #A8E6A2;
+}
+
+.color-2 { 
+    background-color: #A7D8F0; 
+}
+
+.color-3 { 
+    background-color: #F8E5C2; 
+}
+
+.color-4 { 
+    background-color: #B5B9FF; 
+}
+
+.color-5 { 
+    background-color: #fdcae1; 
+}
+
+/* ☀️ Modo Claro */
+body {
+    background-color: #F8F8F8;
+    color: #333;
+}
+
+.dropdown-menu {
+    background-color: #FFFFFF;
+    border: 1px solid #DDD;
+    padding: 10px;
+}
+
+/* 🎨 Estilos del botón "Apariencia" */
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    background: #DDD;
+    padding: 10px;
+    border-radius: 8px;
+    color: #333;
+    font-weight: bold;
+    transition: background 0.5s ease, color 0.5s ease;
+}
+
+/* 🎨 Colores de selección */
+.color-option {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    margin: 1rem;
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
+    border: 2px solid #333;
+}
+
+.color-option:hover {
+    transform: scale(1.1);
+}
+
+/* 🎨 Colores de selección */
+.color-1 { background-color: #A8E6A2; }
+.color-2 { background-color: #A7D8F0; }
+.color-3 { background-color: #F8E5C2; }
+.color-4 { background-color: #B5B9FF; }
+.color-5 { background-color: #FDCAE1; }
+
+/* 🎨 Fondo del body según selección */
+body:has(#theme-1:checked) {
+    background-color: #C4E7B5;
+    color: #333;
+}
+body:has(#theme-2:checked) {
+    background-color: #C2E2F2;
+    color: #333;
+}
+body:has(#theme-3:checked) {
+    background-color: #FBE3B9;
+    color: #333;
+}
+body:has(#theme-4:checked) {
+    background-color: #D6D7FF;
+    color: #333;
+}
+body:has(#theme-5:checked) {
+    background-color: #FDD0E5;
+    color: #333;
+}
+
+/* 🎨 Menú y botón "Apariencia" en Modo Claro */
+body:has(#theme-1:checked) .dropdown-menu,
+body:has(#theme-1:checked) .menu-icon {
+    background-color: #C4E7B5;
+    border: 2px solid #333;
+}
+body:has(#theme-2:checked) .dropdown-menu,
+body:has(#theme-2:checked) .menu-icon {
+    background-color: #C2E2F2;
+    border: 2px solid #333;
+}
+body:has(#theme-3:checked) .dropdown-menu,
+body:has(#theme-3:checked) .menu-icon {
+    background-color: #FBE3B9;
+    border: 2px solid #333;
+}
+body:has(#theme-4:checked) .dropdown-menu,
+body:has(#theme-4:checked) .menu-icon {
+    background-color: #D6D7FF;
+    border: 2px solid #333;
+}
+body:has(#theme-5:checked) .dropdown-menu,
+body:has(#theme-5:checked) .menu-icon {
+    background-color: #FDD0E5;
+    border: 2px solid #333;
+}
+
+/* 🌙 Modo Oscuro */
+body.theme-dark {
+    background-color: #1E1E2E;
+    color: #E0E0E0;
+}
+
+body.theme-dark .dropdown-menu {
+    background-color: #2A2A3A;
+    border: 1px solid #3C3C4E;
+}
+
+/* 🎨 Colores de selección en modo oscuro */
+body.theme-dark .color-1 { background-color: #7FB685; }
+body.theme-dark .color-2 { background-color: #6A93CC; }
+body.theme-dark .color-3 { background-color: #F2A97E; }
+body.theme-dark .color-4 { background-color: #B89AD3; }
+body.theme-dark .color-5 { background-color: #D88CAC; }
+
+/* 🎨 Fondo del body en modo oscuro */
+body.theme-dark:has(#theme-1:checked) {
+    background-color: #5E8D75;
+}
+body.theme-dark:has(#theme-2:checked) {
+    background-color: #4E72A7;
+}
+body.theme-dark:has(#theme-3:checked) {
+    background-color: #D99171;
+}
+body.theme-dark:has(#theme-4:checked) {
+    background-color: #8E77B8;
+}
+body.theme-dark:has(#theme-5:checked) {
+    background-color: #C07C9E;
+}
+
+/* 🎨 Menú y botón "Apariencia" en Modo Oscuro */
+body.theme-dark:has(#theme-1:checked) .dropdown-menu,
+body.theme-dark:has(#theme-1:checked) .menu-icon {
+    background-color: #5E8D75;
+    border: 2px solid #333;
+}
+body.theme-dark:has(#theme-2:checked) .dropdown-menu,
+body.theme-dark:has(#theme-2:checked) .menu-icon {
+    background-color: #4E72A7;
+    border: 2px solid #333;
+}
+body.theme-dark:has(#theme-3:checked) .dropdown-menu,
+body.theme-dark:has(#theme-3:checked) .menu-icon {
+    background-color: #D99171;
+    border: 2px solid #333;
+}
+body.theme-dark:has(#theme-4:checked) .dropdown-menu,
+body.theme-dark:has(#theme-4:checked) .menu-icon {
+    background-color: #8E77B8;
+    border: 2px solid #333;
+}
+body.theme-dark:has(#theme-5:checked) .dropdown-menu,
+body.theme-dark:has(#theme-5:checked) .menu-icon {
+    background-color: #C07C9E;
+    border: 2px solid #333;
 }
