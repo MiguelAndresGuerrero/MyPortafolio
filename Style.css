@@ -8,7 +8,9 @@ body {
     color: #222;
     transition: background-color 1s ease-in-out, color 0.5s ease-in-out;
 }
-
+*{
+    scroll-behavior: smooth;
+}
 /* ----- HEADER ----- */
 header {
     background-color: #ffffff;
