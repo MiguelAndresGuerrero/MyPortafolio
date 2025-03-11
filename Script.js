@@ -111,6 +111,6 @@ document.addEventListener("click", function (event) {
     }
 });
 
-document.getElementById("toggle-dark-mode").addEventListener("click", function() {
+document.getElementById("toggle-dark-mode").addEventListener("click", function () {
     document.body.classList.toggle("theme-dark");
 });
