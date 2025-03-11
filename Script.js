@@ -57,6 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (elemento) {
         let indexFrase = 0, indexLetra = 0, escribiendo = true;
 
+        // ✍️ Escribir texto
         function escribirTexto() {
             if (escribiendo) {
                 if (indexLetra < frases[indexFrase].length) {
@@ -69,6 +70,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
 
+        // 🗑️ Borrar texto
         function borrarTexto() {
             if (!escribiendo) {
                 if (indexLetra > 0) {
@@ -99,6 +101,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
+// 😶‍🌫️ Ocultar menu de cambio de colores
 document.addEventListener("click", function (event) {
     const menuToggle = document.getElementById("menu-toggle");
     const menuContainer = document.querySelector(".menu-container");
