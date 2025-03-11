@@ -49,8 +49,8 @@ document.addEventListener("DOMContentLoaded", function () {
     // 📝 Animación de texto dinámico
     const frases = [
         "¡Bienvenido a mi mundo digital! 👋",
-        "Apasionado por la tecnología y el código 💻",
-        "Crafteando el futuro con cada línea de código 🌐"
+        "Apasionado por la tecnología y el código",
+        "Crafteando el futuro con cada línea de código"
     ];
 
     const elemento = document.querySelector(".neon-text");
