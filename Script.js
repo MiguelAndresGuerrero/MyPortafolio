@@ -49,6 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // 📝 Animación de texto dinámico
     const frases = [
         "¡Bienvenido a mi mundo digital! 👋",
+        "Soy Andres Guerrero Desarrollador Full Stack",
         "Apasionado por la tecnología y el código",
         "Crafteando el futuro con cada línea de código"
     ];
@@ -85,19 +86,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         escribirTexto();
-    }
-
-    // ⏳ Ocultar Splash Screen
-    const splashScreen = document.getElementById("splash-screen");
-    if (splashScreen) {
-        setTimeout(() => {
-            splashScreen.classList.add("fade-out");
-            setTimeout(() => {
-                splashScreen.style.display = "none";
-                body.style.pointerEvents = "auto";
-            }, 1000);
-        }, 1000);
-        body.style.pointerEvents = "none";
     }
 });
 
