@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // 📝 Animación de texto dinámico
     const frases = [
         "¡Bienvenido a mi mundo digital! 👋",
-        "Soy Andres Guerrero Desarrollador Full Stack",
+        "Soy Andres Guerrero Desarrollador Full Stack Junior",
         "Apasionado por la tecnología y el código",
         "Crafteando el futuro con cada línea de código"
     ];
@@ -101,4 +101,34 @@ document.addEventListener("click", function (event) {
 
 document.getElementById("toggle-dark-mode").addEventListener("click", function () {
     document.body.classList.toggle("theme-dark");
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const themes = document.querySelectorAll('input[name="theme"]');
+    const body = document.body;
+    const timelineItems = document.querySelectorAll(".timeline-item");
+
+    const themeColors = {
+        theme1: { border: "#C4E7B5", bg: "#5E8D75" },
+        theme2: { border: "#D4ECDD", bg: "#4E72A7" },
+        theme3: { border: "#FBE3B9", bg: "#D99171" },
+        theme4: { border: "#D6D7FF", bg: "#8E77B8" },
+        theme5: { border: "#FDD0E5", bg: "#C07C9E" },
+    };
+
+    function applyTheme(selectedTheme) {
+        if (themeColors[selectedTheme]) {
+            body.style.backgroundColor = themeColors[selectedTheme].bg;
+            timelineItems.forEach(item => {
+                item.style.borderLeft = `6px solid ${themeColors[selectedTheme].border}`;
+                item.style.backgroundColor = themeColors[selectedTheme].border;
+            });
+        }
+    }
+
+    themes.forEach(theme => {
+        theme.addEventListener("change", function () {
+            applyTheme(this.id);
+        });
+    });
 });

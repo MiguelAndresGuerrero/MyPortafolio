@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Miguel Guerrero</title>
+    <head>
+    <title>Andres Guerrero | Desarrollador Full Stack</title>
+    <meta name="description" content="Soy un desarrollador web con experiencia en Java, Spring Boot, HTML, CSS y JavaScript. Conoce mis proyectos aquí.">
+    <meta name="keywords" content="Desarrollador Full Stack, Java, Spring Boot, Frontend, Backend">
+    <meta name="author" content="Andres Guerrero">
     <link rel="icon" href="./media/React_logo.png">
     <link rel="stylesheet" href="./Style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
@@ -25,6 +30,7 @@
                 <img src="./media/Blue-Moon.png" alt="Luna azul" width="40" id="dark-mode" style="display: none;">
                 <span id="mode-text" style="display: none;">Modo Oscuro</span>
             </button>
+
             <div class="menu-container">
                 <input type="checkbox" id="menu-toggle">
                 <label for="menu-toggle" class="menu-icon"> Apariencia</label>
@@ -44,37 +50,42 @@
     
                     <input type="radio" name="color-theme" id="theme-5">
                     <label for="theme-5" class="color-option color-5">Color 5</label>
-    
                 </menu>
-    
             </div>
         </nav>
     </header>
-
+    
     <section id="Inicio" class="portada">
-        <img src="./media/Perfil.jpg" alt="foto-perfil" class="foto-perfil2" loading="lazy">
+        <div class="contenedor-perfil">
+            <img src="./media/Perfil.jpg" alt="foto-perfil" class="foto-perfil2" loading="lazy">
+        </div>
+        
         <img src="./media/Lenguajes/CSS.png" class="icono flotante1">
         <img src="./media/Lenguajes/JAVASCRIPT.png" class="icono flotante2">
         <img src="./media/Lenguajes/HTML.png" class="icono flotante3">
         <img src="./media/Lenguajes/SPRINGBOOT.png" class="icono flotante4">
-
+    
         <div class="animation">
             <p class="neon-text"></p>
         </div>
-
+    
         <a href="#Proyectos" class="btn">Ver mis proyectos</a>
-    </section>
+    </section>    
 
     <section id="SobreMi">
         <h2>Sobre mí</h2>
         <div class="sobre-mi-contenedor">
-            <img src="./media/Foto.jpg" alt="Perfil de Miguel Guerrero" loading="lazy" class="foto-perfil">
-            <p class="texto-sobre-mi">
-                ¡Hola! Soy <strong>Miguel Guerrero</strong>, un apasionado de la <strong>programación</strong> y el
-                <strong>desarrollo web</strong>. Me encanta enfrentar nuevos desafíos y aprender algo nuevo cada día.
-                Actualmente estoy fortaleciendo mis habilidades en <strong>Java</strong> y tengo experiencia trabajando
-                con <strong>MySQL</strong> en el desarrollo de aplicaciones eficientes y escalables.
-            </p>
+            <div class="contenedor-perfil">
+                <img src="./media/Foto.jpg" alt="Foto de Miguel Guerrero" class="foto-perfil2" loading="lazy">
+            </div>
+            <div class="contenedor__texto_sobremi">
+                <p class="texto-sobre-mi">
+                    ¡Hola! Soy <strong>Miguel Guerrero</strong>, un apasionado de la <strong>programación</strong> y el
+                    <strong>desarrollo web</strong>. Me encanta enfrentar nuevos desafíos y aprender algo nuevo cada día.
+                    Actualmente estoy fortaleciendo mis habilidades en <strong>Java</strong> y tengo experiencia trabajando
+                    con <strong>MySQL</strong> en el desarrollo de aplicaciones eficientes y escalables.
+                </p>
+            </div>
         </div>
     </section>
 
@@ -82,7 +93,9 @@
         <h2>Proyectos</h2>
         <div class="proyecto-container">
             <div class="proyecto">
-                <img src="./media/Imagen_Proyecto1.jpg" alt="Proyecto 1 - Notas Vibrantes">
+                <div class="contenedor-proyectos">
+                    <img src="./media/Imagen_Proyecto1.jpg" alt="Proyecto 1 - Notas Vibrantes" class="foto-perfil2">
+                </div>
                 <h3>Notas Vibrantes</h3>
                 <p>Proyecto en Java que gestiona una base de datos llamada "Notas Vibrantes". Permite almacenar,
                     modificar y eliminar registros
@@ -90,35 +103,45 @@
                 <a href="https://github.com/MiguelAndresGuerrero/Java_NotasVibrantes_DDBB">📂 Ver Repositorio</a>
             </div>
             <div class="proyecto">
-                <img src="./media/Imagen_Proyecto2.png" alt="Proyecto 2 - Rick and Morty API">
+                <div class="contenedor-proyectos">
+                    <img src="./media/Imagen_Proyecto2.png" alt="Proyecto 2 - Rick and Morty API" class="foto-perfil2">
+                </div>
                 <h3>Rick and Morty - API</h3>
                 <p>Aplicación web creada con HTML, CSS y JavaScript que utiliza la API de Rick and Morty para mostrar
                     personajes, episodios y sus imágenes.</p>
                 <a href="https://github.com/MiguelAndresGuerrero/RickAndMortyAPI.git">📂 Ver Repositorio</a>
             </div>
             <div class="proyecto">
-                <img src="./media/Imagen_Proyecto3.png" alt="Proyecto 3 - Movie API">
+                <div class="contenedor-proyectos">
+                    <img src="./media/Imagen_Proyecto3.png" alt="Proyecto 3 - Movies_API" class="foto-perfil2">
+                </div>
                 <h3>Movie - API</h3>
                 <p>Aplicación web en HTML, CSS y JavaScript que consume una API de películas. Permite realizar búsquedas
                     en tiempo real y visualizar información detallada.</p>
                 <a href="https://github.com/MiguelAndresGuerrero/Movies_API.git">📂 Ver Repositorio</a>
             </div>
             <div class="proyecto">
-                <img src="./media/Imagen_Proyecto4.jpg" alt="Proyecto 4 - Movistar DDBB">
+                <div class="contenedor-proyectos">
+                    <img src="./media/Imagen_Proyecto4.jpg" alt="Proyecto 4 - DDBB_MOVISTAR" class="foto-perfil2">
+                </div>
                 <h3>Movistar</h3>
                 <p>Sistema de base de datos para MOVISTAR diseñado para optimizar procesos y mejorar la relación con los
                     clientes, permitiendo una gestión más eficiente y personalizada.</p>
                 <a href="https://github.com/MiguelAndresGuerrero/DDBB_MOVISTAR">📂 Ver Repositorio</a>
             </div>
             <div class="proyecto">
-                <img src="./media/Imagen_Proyecto5.jpg" alt="Proyecto 5 - Conversor de Monedas">
+                <div class="contenedor-proyectos">
+                    <img src="./media/Imagen_Proyecto5.jpg" alt="Proyecto 5 - Conversor de Monedas" class="foto-perfil2">
+                </div>
                 <h3>Conversor de Monedas</h3>
                 <p>Este programa ayuda a calcular el cambio exacto en dólares,
                     facilitando transacciones precisas y rápidas para cualquier monto.</p>
                 <a href="https://github.com/MiguelAndresGuerrero/DIA_4.git">📂 Ver Repositorio</a>
             </div>
             <div class="proyecto">
-                <img src="./media/Imagen_Proyecto6.jpg" alt="Proyecto 6 - Tienda Online">
+                <div class="contenedor-proyectos">
+                    <img src="./media/Imagen_Proyecto6.jpg" alt="Proyecto 6 - Tienda Online" class="foto-perfil2">
+                </div>
                 <h3>Tienda Online</h3>
                 <p>Este programa simula el funcionamiento de una tienda en línea con diferentes roles de usuario:
                     cliente, empleado y dueño.</p>
@@ -126,14 +149,18 @@
                     Repositorio</a>
             </div>
             <div class="proyecto">
-                <img src="./media/Imagen_Proyecto7.png" alt="Proyecto 7 - Menu de API'S">
+                <div class="contenedor-proyectos">
+                    <img src="./media/Imagen_Proyecto7.png" alt="Proyecto 7 - Menu de API'S" class="foto-perfil2">
+                </div>
                 <h3>Menu de API'S</h3>
                 <p>Este programa facilita la gestión y consulta de diversas APIs a través de un menú interactivo,
                     optimizando el acceso a información en tiempo real.</p>
                 <a href="https://github.com/MiguelAndresGuerrero/Menu-APIs.git">📂 Ver Repositorio</a>
             </div>
             <div class="proyecto">
-                <img src="./media/Imagen_Proyecto8.jpg" alt="Proyecto 8 - Tienda">
+                <div class="contenedor-proyectos">
+                    <img src="./media/Imagen_Proyecto8.jpg" alt="Proyecto 8 - Tienda" class="foto-perfil2">
+                </div>
                 <h3>Tienda</h3>
                 <p>En este proyecto se replico lo mejor posible una pasarela de pago con 3 productos que se añaden al
                     carrito
@@ -141,7 +168,9 @@
                 <a href="https://github.com/MiguelAndresGuerrero/DIA-9.git">📂 Ver Repositorio</a>
             </div>
             <div class="proyecto">
-                <img src="./media/Imagen_Proyecto9.jpg" alt="Proyecto 9 - DDBB JARDINERIA">
+                <div class="contenedor-proyectos">
+                    <img src="./media/Imagen_Proyecto9.jpg" alt="Proyecto 9 - DDBB JARDINERIA" class="foto-perfil2">
+                </div>
                 <h3>Jardineria</h3>
                 <p>El proyecto Jardinería es una base de datos diseñada para gestionar la información.
                     Incluye tablas para oficinas, empleados, clientes, pedidos y productos,
@@ -194,6 +223,36 @@
                         loading="lazy"></div>
                 <div class="swiper-slide" data-name="Canva"><img src="./media/Tools/Canva.png" alt="Canva"
                         loading="lazy"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="habilidades-blandas">
+        <h2>Habilidades Blandas</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="contenido">
+                    <h3>🗣️ Comunicación</h3>
+                    <p>Expreso ideas de manera clara y efectiva.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="contenido">
+                    <h3>🤝 Trabajo en equipo</h3>
+                    <p>Colaboro eficientemente con compañeros.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="contenido">
+                    <h3>🚀 Adaptabilidad</h3>
+                    <p>Me ajusto fácilmente a nuevos desafíos.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="contenido">
+                    <h3>🔄 Receptividad a la crítica</h3>
+                    <p>Recibo la retroalimentación como una oportunidad de mejora y crecimiento en cada proyecto</p>
+                </div>
             </div>
         </div>
     </section>
