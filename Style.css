@@ -740,20 +740,20 @@ footer {
 
 .flotante1 {
     top: 10rem;
-    left: 10rem;
+    left: 6rem;
     animation-delay: 0s;
     z-index: -1;
 }
 
 .flotante2 {
     top: 30rem;
-    left: 14rem;
+    left: 9rem;
     animation-delay: 0.5s;
     z-index: -1;
 }
 
 .flotante3 {
-    top: 28rem;
+    top: 30rem;
     right: 10rem;
     animation-delay: 1s;
     z-index: -1;
@@ -761,7 +761,7 @@ footer {
 
 .flotante4 {
     top: 10rem;
-    right: 1rem;
+    right: 4rem;
     animation-delay: 1.5;
     z-index: -1;
 }
