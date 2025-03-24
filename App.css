@@ -1,0 +1,518 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lilita+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Modak&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&family=Modak&display=swap");
+
+body {
+    background-color: #0e0e11;
+    color: white;
+    font-family: "Fredoka One", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.profile {
+    margin-top: 2rem;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 50px rgba(128, 0, 255, 0.6);
+    border: 4px solid #7130aa;
+}
+
+.profile img {
+    width: 100%;
+    height: auto;
+}
+
+/* Estilo para el nombre */
+.name {
+    font-family: "Modak", system-ui;
+    font-weight: 400;
+    font-size: 4em;
+    text-align: center;
+    color: transparent;
+    background: linear-gradient(45deg, #7b3aed 0%, #008cfa 80%, #008cfa 100%);
+    background-size: 240% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+/* Estilo para el full stack */
+.role {
+    font-size: 1.6em;
+    color: #ccccccc7;
+}
+
+/* Estilo para los botones del perfil */
+.buttons a {
+    text-decoration: none;
+    background: black;
+    border: 1px solid #7b3aed;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #7b3aed;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.5s;
+}
+
+.buttons a:hover {
+    transform: scale(1.1);
+    color: white;
+    background: linear-gradient(45deg, #ff00ff, #8000ff);
+    box-shadow: 0 0 15px rgba(128, 0, 255, 0.8);
+}
+
+/* Contenedor principal */
+.cont-about {
+    max-width: 700px;
+    margin: auto;
+    padding: 40px;
+    text-align: center;
+}
+
+/* Título "About Me" */
+.name-about-me {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #7b3aed;
+    text-shadow: 0 0 8px rgba(164, 110, 245, 0.8);
+    text-align: center;
+}
+
+/* Contenedor de la imagen */
+.about-img {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 15px;
+}
+
+/* Imagen de perfil */
+.about-img img {
+    width: 180px;
+    height: 180px;
+    border-radius: 10px;
+    border: 3px solid #a46ef5;
+    box-shadow: 0 0 15px rgba(164, 110, 245, 0.8);
+}
+
+/* Nombre */
+.about-text h3 {
+    display: flex;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+}
+
+/* Descripción */
+.text-about-me {
+    font-size: 1rem;
+    color: #bbb;
+    text-align: left;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+/* Contenedor de la información */
+.info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 600px;
+    text-align: left;
+}
+
+.info-item strong {
+    color: #6e35d4;
+    font-weight: bold;
+}
+
+.info-item p {
+    margin: 5px 0;
+    color: #bbb;
+}
+
+/* Botón de descarga de CV */
+.download-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    background: #6734C0;
+    box-shadow: 0 0 15px rgba(164, 110, 245, 0.8);
+    color: white;
+    padding: 12px;
+    margin: 20px auto;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.download-btn:hover {
+    transform: scale(1.1);
+    background: linear-gradient(45deg, #8a50ff, #7b3aed);
+}
+
+/* Ícono dentro del botón */
+.download-btn::before {
+    content: "⬇";
+    margin-right: 10px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #7B3AED;
+    text-shadow: 0 0 16px #7c3aedbd;
+    margin-bottom: 20px;
+}
+
+/* Contenedor de las tarjetas */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px;
+    justify-items: stretch;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Estilo de cada tarjeta */
+.card {
+    position: relative;
+    background: #1e1e1e;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Imágenes dentro de las tarjetas */
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+    transition: filter 0.5s ease-in-out;
+}
+
+/* Contenido de la tarjeta */
+.card-content {
+    position: absolute;
+    top: -20px;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.80);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card:hover .card-content {
+    opacity: 1;
+}
+
+.card-content h2 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.card-content p {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+/* Estilo de etiquetas */
+
+.tags span {
+    color: #7B3AED;
+    background-color: #7c3aed3b;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    margin: 4px;
+    display: inline-block;
+}
+
+.tags a {
+    text-decoration: none;
+    color: #7B3AED;
+    background-color: #7c3aed3b;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    margin: 4px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.tags a:hover {
+    background-color: #7c3aed;
+    color: white;
+}
+
+#skills h2 {
+    display: flex;
+    justify-content: center;
+    color: #7B3AED;
+    font-size: 48px;
+    text-shadow: 0 0 16px #7c3aedbd;
+}
+
+/* Contenedor de habilidades */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* Espacio entre cajas */
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+/* Estilo de las cajas */
+.skill-box {
+    border: 2px solid #7B3AED;
+    border-radius: 12px;
+    padding: 20px;
+    width: 320px;
+    box-shadow: 0px 0px 10px rgba(123, 58, 237, 0.3);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+/* Efecto hover */
+.skill-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 15px rgba(123, 58, 237, 0.5);
+}
+
+/* Contenedor del título e ícono */
+.skill-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+/* Tamaño del ícono */
+.skill-box i {
+    font-size: 26px;
+}
+
+/* Estilo del título */
+.skill-box h3 {
+    font-size: 20px;
+}
+
+/* Íconos personalizados por categoría */
+.fas.fa-code {
+    color: #7B3AED;
+}
+
+.fas.fa-server {
+    color: #008CFA;
+}
+
+.Skills span{
+    background-color: #008CFA;
+}
+
+.fas.fa-database {
+    color: #9D29C1;
+}
+
+.fas.fa-globe {
+    color: #7B3AED;
+}
+
+.fas.fa-paint-brush {
+    color: #008CFA;
+}
+
+.fas.fa-cogs {
+    color: #9D29C1;
+}
+
+/* Estilo de los botones de habilidades */
+.skill-box span {
+    background-color: rgba(123, 58, 237, 0.7);
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    margin: 5px;
+    display: inline-block;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 0 8px rgba(123, 58, 237, 0.5);
+}
+
+.Skill-text{
+    display: flex;
+    color: #ccccccc1;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.Skills-purple{
+    color: #7B3AED;
+    background-color: #7c3aed20 !important;
+}
+
+.Skills-blue{
+    color: #008CFA;
+    background-color: #008cfa20 !important;
+}
+
+.Skills-pink{
+    color: #9D29C1;
+    background-color: #9d29c120 !important;
+}
+/* Estilos Generales */
+#contact {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.contacts {
+    font-size: 32px;
+    color: #7B3AED;
+    text-shadow: 0 0 8px rgba(123, 58, 237, 0.5);
+}
+
+/* Contenedor principal */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Información de contacto */
+.contact-info {
+    text-align: center;
+    max-width: 400px;
+}
+
+.contact-info h3 {
+    font-size: 24px;
+    color: white;
+}
+
+.contact-info p {
+    color: #bbb;
+    margin: 10px 0;
+}
+
+/* Íconos de contacto */
+.contact-icons {
+    margin-top: 20px;
+}
+
+.contact-icons a {
+    display: inline-block;
+    margin-right: 25px;
+    font-size: 24px;
+    color: #7B3AED;
+    background: rgba(123, 58, 237, 0.1);
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.contact-icons a:hover {
+    background: #7B3AED;
+    color: white;
+}
+
+/* Estilos del Formulario */
+.contact-form {
+    background: #1A1A1A;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(123, 58, 237, 0.3);
+    max-width: 400px;
+    width: 100%;
+    text-align: left;
+}
+
+.contact-form h3 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 14px;
+    color: #bbb;
+    margin-top: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #7B3AED;
+    border-radius: 5px;
+    background: #222;
+    color: white;
+}
+
+.contact-form textarea {
+    height: 100px;
+    resize: none;
+}
+
+/* Boton de enviar */
+.send-btn {
+    width: 100%;
+    background: #7B3AED;
+    color: white;
+    padding: 10px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.send-btn i {
+    margin-right: 5px;
+}
+
+.send-btn:hover {
+    background: #5A1FBF;
+}

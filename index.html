@@ -2,280 +2,308 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Andres Guerrero</title>
-    <meta name="description" content="Soy un desarrollador full stack junior con experiencia en Java, MySQL, HTML, CSS y JavaScript">
-    <meta name="keywords" content="Desarrollador Full Stack, Java, Spring Boot, Frontend, Backend">
-    <meta name="author" content="Andres Guerrero">
-    <link rel="icon" href="./media/React_logo.png">
-    <link rel="stylesheet" href="./Style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="./media/react.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Andres Guerrero</title>
+  <meta name="author" content="Andres Guerrero">
+  <meta name="description" content="Desarrollador Full Stack Junior">
+  <meta name="keywords" content="Experiencia en Java, Spring Boot, MySQL, HTML, CSS, JavaScript y PosgreSQL">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="./App.css">
 </head>
 
 <body>
-    <header>
-        <nav class="navbar">
-            <ul class="nav-links">
-                <li><a href="#SobreMi" class="nav-1">Sobre mí</a></li>
-                <li><a href="#Proyectos" class="nav-2">Proyectos</a></li>
-                <li><a href="#lenguajes" class="nav-3">Lenguajes</a></li>
-                <li><a href="#Contactos" class="nav-4">Contacto</a></li>
-            </ul>
-            <button id="toggle-dark-mode" class="toggle-btn" aria-label="Alternar modo oscuro">
-                <img src="./media/Blue-Moon.png" alt="Sol" width="40" id="light-mode">
-                <img src="./media/Sol.png" alt="Luna azul" width="40" id="dark-mode" style="display: none;">
-                <span id="mode-text" style="display: none;">Modo Oscuro</span>
-            </button>
+  <div class="container">
+    <div class="profile">
+      <img src="./media/Perfil.jpg" alt="Foto-Perfil-Animada" class="Foto-Perfil-Animada">
+    </div>
+    <h1 class="name">Andres Guerrero</h1>
+    <h2 class="role">Developer Full Stack Junior</h2>
+    <div class="buttons">
+      <a href="#contact" class="contac">Contact me</a>
+      <a href="#proyectos" class="work">View my work</a>
+    </div>
+  </div>
 
-            <div class="menu-container">
-                <input type="checkbox" id="menu-toggle">
-                <label for="menu-toggle" class="menu-icon"> Apariencia</label>
-                
-                <menu class="dropdown-menu">
-                    <input type="radio" name="color-theme" id="theme-1">
-                    <label for="theme-1" class="color-option color-1">Color 1</label>
-            
-                    <input type="radio" name="color-theme" id="theme-2">
-                    <label for="theme-2" class="color-option color-2">Color 2</label>
-            
-                    <input type="radio" name="color-theme" id="theme-3">
-                    <label for="theme-3" class="color-option color-3">Color 3</label>
-            
-                    <input type="radio" name="color-theme" id="theme-4">
-                    <label for="theme-4" class="color-option color-4">Color 4</label>
-    
-                    <input type="radio" name="color-theme" id="theme-5">
-                    <label for="theme-5" class="color-option color-5">Color 5</label>
-                </menu>
-            </div>
-        </nav>
-    </header>
-    
-    <section id="Inicio" class="portada">
-        <div class="contenedor-perfil">
-            <img src="./media/Perfil.jpg" alt="foto-perfil" class="foto-perfil2" loading="lazy">
-        </div>
-        
-        <img src="./media/Lenguajes/CSS.png" class="icono flotante1">
-        <img src="./media/Lenguajes/JAVASCRIPT.png" class="icono flotante2">
-        <img src="./media/Lenguajes/HTML.png" class="icono flotante3">
-        <img src="./media/Lenguajes/SPRINGBOOT.png" class="icono flotante4">
-    
-        <div class="animation">
-            <p class="neon-text"></p>
-        </div>
-    
-        <a href="#Proyectos" class="btn">Ver mis proyectos</a>
-    </section>    
+  <section id="sobre-mi">
+    <div class="cont-about">
+      <h2 class="name-about-me">About Me</h2>
 
-    <section id="SobreMi">
-        <h2>Sobre mí</h2>
-        <div class="sobre-mi-contenedor">
-            <div class="contenedor-perfil">
-                <img src="./media/Foto.jpg" alt="Foto de Miguel Guerrero" class="foto-perfil2" loading="lazy">
-            </div>
-            <div class="contenedor__texto_sobremi">
-                <p class="texto-sobre-mi">
-                    ¡Hola! Soy <strong>Miguel Guerrero</strong>, un apasionado de la <strong>programación</strong> y el
-                    <strong>desarrollo web</strong>. Me encanta enfrentar nuevos desafíos y aprender algo nuevo cada día.
-                    Actualmente estoy fortaleciendo mis habilidades en <strong>Java</strong> y tengo experiencia trabajando
-                    con <strong>MySQL</strong> en el desarrollo de aplicaciones eficientes y escalables.
-                </p>
-            </div>
-        </div>
-    </section>
+      <div class="about-img">
+        <img src="./media/Foto.jpg" alt="Foto-Perfil-Animada">
+      </div>
 
-    <section id="Proyectos">
-        <h2>Proyectos</h2>
-        <div class="proyecto-container">
-            <div class="proyecto">
-                <div class="contenedor-proyectos">
-                    <img src="./media/Imagen_Proyecto1.jpg" alt="Proyecto 1 - Notas Vibrantes" class="foto-perfil2">
-                </div>
-                <h3>Notas Vibrantes</h3>
-                <p>Proyecto en Java que gestiona una base de datos llamada "Notas Vibrantes". Permite almacenar,
-                    modificar y eliminar registros
-                    mediante MySQL. Desarrollado en Apache NetBeans y requiere JDK 8.</p>
-                <a href="https://github.com/MiguelAndresGuerrero/Java_NotasVibrantes_DDBB">📂 Ver Repositorio</a>
-            </div>
-            <div class="proyecto">
-                <div class="contenedor-proyectos">
-                    <img src="./media/Imagen_Proyecto2.png" alt="Proyecto 2 - Rick and Morty API" class="foto-perfil2">
-                </div>
-                <h3>Rick and Morty - API</h3>
-                <p>Aplicación web creada con HTML, CSS y JavaScript que utiliza la API de Rick and Morty para mostrar
-                    personajes, episodios y sus imágenes.</p>
-                <a href="https://github.com/MiguelAndresGuerrero/RickAndMortyAPI.git">📂 Ver Repositorio</a>
-            </div>
-            <div class="proyecto">
-                <div class="contenedor-proyectos">
-                    <img src="./media/Imagen_Proyecto3.png" alt="Proyecto 3 - Movies_API" class="foto-perfil2">
-                </div>
-                <h3>Movie - API</h3>
-                <p>Aplicación web en HTML, CSS y JavaScript que consume una API de películas. Permite realizar búsquedas
-                    en tiempo real y visualizar información detallada.</p>
-                <a href="https://github.com/MiguelAndresGuerrero/Movies_API.git">📂 Ver Repositorio</a>
-            </div>
-            <div class="proyecto">
-                <div class="contenedor-proyectos">
-                    <img src="./media/Imagen_Proyecto4.jpg" alt="Proyecto 4 - DDBB_MOVISTAR" class="foto-perfil2">
-                </div>
-                <h3>Movistar</h3>
-                <p>Sistema de base de datos para MOVISTAR diseñado para optimizar procesos y mejorar la relación con los
-                    clientes, permitiendo una gestión más eficiente y personalizada.</p>
-                <a href="https://github.com/MiguelAndresGuerrero/DDBB_MOVISTAR">📂 Ver Repositorio</a>
-            </div>
-            <div class="proyecto">
-                <div class="contenedor-proyectos">
-                    <img src="./media/Imagen_Proyecto5.jpg" alt="Proyecto 5 - Conversor de Monedas" class="foto-perfil2">
-                </div>
-                <h3>Conversor de Monedas</h3>
-                <p>Este programa ayuda a calcular el cambio exacto en dólares,
-                    facilitando transacciones precisas y rápidas para cualquier monto.</p>
-                <a href="https://github.com/MiguelAndresGuerrero/DIA_4.git">📂 Ver Repositorio</a>
-            </div>
-            <div class="proyecto">
-                <div class="contenedor-proyectos">
-                    <img src="./media/Imagen_Proyecto6.jpg" alt="Proyecto 6 - Tienda Online" class="foto-perfil2">
-                </div>
-                <h3>Tienda Online</h3>
-                <p>Este programa simula el funcionamiento de una tienda en línea con diferentes roles de usuario:
-                    cliente, empleado y dueño.</p>
-                <a href="https://github.com/MiguelAndresGuerrero/TRABAJO_PYTHON_GUERREROMIGUEL.git">📂 Ver
-                    Repositorio</a>
-            </div>
-            <div class="proyecto">
-                <div class="contenedor-proyectos">
-                    <img src="./media/Imagen_Proyecto7.png" alt="Proyecto 7 - Menu de API'S" class="foto-perfil2">
-                </div>
-                <h3>Menu de API'S</h3>
-                <p>Este programa facilita la gestión y consulta de diversas APIs a través de un menú interactivo,
-                    optimizando el acceso a información en tiempo real.</p>
-                <a href="https://github.com/MiguelAndresGuerrero/Menu-APIs.git">📂 Ver Repositorio</a>
-            </div>
-            <div class="proyecto">
-                <div class="contenedor-proyectos">
-                    <img src="./media/Imagen_Proyecto8.jpg" alt="Proyecto 8 - Tienda" class="foto-perfil2">
-                </div>
-                <h3>Tienda</h3>
-                <p>En este proyecto se replico lo mejor posible una pasarela de pago con 3 productos que se añaden al
-                    carrito y se resta el saldo de la tarjeta, También se muestra una lista de compras.</p>
-                <a href="https://github.com/MiguelAndresGuerrero/DIA-9.git">📂 Ver Repositorio</a>
-            </div>
-            <div class="proyecto">
-                <div class="contenedor-proyectos">
-                    <img src="./media/Imagen_Proyecto9.jpg" alt="Proyecto 9 - DDBB JARDINERIA" class="foto-perfil2">
-                </div>
-                <h3>Jardineria</h3>
-                <p>El proyecto Jardinería es una base de datos diseñada para gestionar la información.
-                    Incluye tablas para oficinas, empleados, clientes, pedidos y productos,
-                    permitiendo organizar y administrar eficientemente todos los datos clave.</p>
-                <a href="https://github.com/MiguelAndresGuerrero/JARDINERIA_MySQL.git">📂 Ver Repositorio</a>
-            </div>
-        </div>
-    </section>
+      <div class="about-text">
+        <h3>Andres Guerrero</h3>
+        <p class="text-about-me">
+          Hello! I'm Andres Guerrero, a passionate programmer full stack junior.
+          I love taking on new challenges and learning something new every day.
+          Currently, I'm strengthening my skills in Java and have experience working with MySQL
+          in developing efficient and scalable applications
+        </p>
 
-    <section id="lenguajes">
-        <h2>Lenguajes:</h2>
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide" data-name="HTML"><img src="./media/Lenguajes/HTML.png" alt="HTML"
-                        loading="lazy"></div>
-                <div class="swiper-slide" data-name="CSS"><img src="./media/Lenguajes/CSS.png" 
-                        alt="CSS" loading="lazy"></div>
-                <div class="swiper-slide" data-name="JavaScript"><img src="./media/Lenguajes/JAVASCRIPT.png"
-                        alt="JavaScript" loading="lazy"></div>
-                <div class="swiper-slide" data-name="Java"><img src="./media/Lenguajes/JAVA.png" alt="Java"
-                        loading="lazy"></div>
-                <div class="swiper-slide" data-name="MySQL"><img src="./media/Lenguajes/MYSQL.png" alt="MySQL"
-                        loading="lazy"></div>
-                <div class="swiper-slide" data-name="Json"><img src="./media/Lenguajes/JSON.png" alt="JSON"
-                        loading="lazy"></div>
-                <div class="swiper-slide" data-name="PostgreSQL"><img src="./media/Lenguajes/POSTGRESQL.png"
-                        alt="POSTGRESQL" loading="lazy"></div>
-                <div class="swiper-slide" data-name="Python"><img src="./media/Lenguajes/PYTHON.png" alt="PYTHON"
-                        loading="lazy"></div>
-                <div class="swiper-slide" data-name="Springboot"><img src="./media/Lenguajes/SPRINGBOOT.png"
-                        alt="SPRINGBOOT" loading="lazy"></div>
-            </div>
-        </div>
-    </section>
+        <div class="info">
+          <div class="info-item">
+            <strong>Location</strong>
+            <p>Tibú, Norte de Santander</p>
+          </div>
 
-    <section id="herramientas">
-        <h2>Herramientas:</h2>
-        <div class="slider">
-            <div class="slide__track"></div>
-        </div>
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide" data-name="Visual Studio Code"><img src="./media/Tools/Visual Studio Code.png"
-                        alt="Visual Studio Code" loading="lazy"></div>
-                <div class="swiper-slide" data-name="NetBeans"><img src="./media/Tools/NetBeans.png" alt="NetBeans"
-                        loading="lazy"></div>
-                <div class="swiper-slide" data-name="Git"><img src="./media/Tools/Git.png" alt="Git" loading="lazy">
-                </div>
-                <div class="swiper-slide" data-name="Figma"><img src="./media/Tools/Figma.png" alt="Figma"
-                        loading="lazy"></div>
-                <div class="swiper-slide" data-name="Canva"><img src="./media/Tools/Canva.png" alt="Canva"
-                        loading="lazy"></div>
-            </div>
-        </div>
-    </section>
+          <div class="info-item">
+            <strong>Email</strong>
+            <p>Guerreromiguelmartinez@gmail.com</p>
+          </div>
 
-    <section id="habilidades-blandas">
-        <h2>Habilidades Blandas</h2>
-        <div class="timeline">
+          <div class="info-item">
+            <strong>Phone</strong>
+            <p>+57 3217646666</p>
+          </div>
 
-            <div class="timeline-item">
-                <div class="contenedor-habilidades">
-                    <img src="./media/HabilidadesBlandas/Comunicacion.jpg" alt="Habilidad comunicativa" class="img-Skills">
-                </div>
-                <h3>Comunicacion</h3>
-                <p>Expreso ideas de manera clara y efectiva</p>
-            </div>
-            <div class="timeline-item">
-                <div class="contenedor-habilidades">
-                    <img src="./media/HabilidadesBlandas/TrabajoEnEquipo.webp" alt="Habilidad trabajo en equipo" class="img-Skills">
-                </div>
-                <h3>Trabajo en equipo</h3>
-                <p>Colaboro eficientemente con compañeros.</p>
-            </div>
-            <div class="timeline-item">
-                <div class="contenedor-habilidades">
-                    <img src="./media/HabilidadesBlandas/Adaptabilidad.webp" alt="Habilidad trabajo en equipo" class="img-Skills">
-                </div>
-                <h3>Adaptabilidad</h3>
-                <p>Me ajusto fácilmente a nuevos desafíos.</p>
-            </div>
-            <div class="timeline-item">
-                <div class="contenedor-habilidades">
-                    <img src="./media/HabilidadesBlandas/Receptividad a la critica.jpg" alt="Habilidad trabajo en equipo" class="img-Skills">
-                </div>
-                    <h3>Receptividad a la crítica</h3>
-                <p>Recibo la retroalimentación como una oportunidad de mejora y crecimiento en cada proyecto</p>
-            </div>
+          <div class="info-item">
+            <strong>Availability</strong>
+            <p>Available for work</p>
+          </div>
         </div>
-    </section>
+        <a href="./media/CV/ESTE_ES_MI_CV.pdf" download class="download-btn">Download CV</a>
+      </div>
+    </div>
+  </section>
 
-    <footer id="Contactos">
-        <p>&copy; 2025 Miguel Guerrero - Todos los derechos reservados - Campuslands</p>
+  <section id="proyectos">
+    <h1 class="section-title">My Proyects</h1>
+    <div class="grid-container">
+      <div class="card">
+        <img src="./media/Imagen_Proyecto1.jpg" alt="Notas Vibrantes">
+        <div class="card-content">
+          <h2>Notas Vibrantes</h2>
+          <p>Java project that manages the 'Vibrant Notes' database,
+            allowing to store, modify and delete records efficiently</p>
+          <div class="tags">
+            <span class="tag">MySQL</span>
+            <span class="tag">Java</span>
+            <a href="https://github.com/MiguelAndresGuerrero/Java_NotasVibrantes_DDBB.git" class="tag">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="./media/Imagen_Proyecto2.png" alt="Rick and Morty">
+        <div class="card-content">
+          <h2>Rick and Morty - API</h2>
+          <p>Web application developed with HTML, CSS and JavaScript that consumes the Rick and Morty API to display
+            detailed information about characters, episodes and images of the series</p>
+          <div class="tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <a href="https://github.com/MiguelAndresGuerrero/RickAndMortyAPI.git" class="tag">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="./media/Imagen_Proyecto3.png" alt="Movies API">
+        <div class="card-content">
+          <h2>Movie - API</h2>
+          <p>Web application developed with HTML, CSS and JavaScript that consumes a movie API,
+            allowing real-time searches and the display of detailed information about each title</p>
+          <div class="tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <a href="https://github.com/MiguelAndresGuerrero/Movies_API.git" class="tag">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="./media/Imagen_Proyecto4.jpg" alt="Movistar">
+        <div class="card-content">
+          <h2>Movistar</h2>
+          <p>Database system for MOVISTAR, designed to optimize internal processes and strengthen the relationship with
+            customers, allowing a more efficient, organized and personalized management of information</p>
+          <div class="tags">
+            <span class="tag">MySQL</span>
+            <a href="https://github.com/MiguelAndresGuerrero/DDBB_MOVISTAR.git" class="tag">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="./media/Imagen_Proyecto5.jpg" alt="Finanzas">
+        <div class="card-content">
+          <h2>Currency Converter</h2>
+          <p>This program allows you to calculate the exact exchange rate in dollars quickly and accurately,
+            optimizing the transaction process and avoiding errors in the change calculation</p>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <a href="https://github.com/MiguelAndresGuerrero/DIA_4.git" class="tag">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="./media/Imagen_Proyecto6.jpg" alt="Tienda en línea">
+        <div class="card-content">
+          <h2>Online Store</h2>
+          <p>This program simulates an online store where users can switch between the roles of customer,
+            employee and owner through a menu, accessing different functions depending on the selected role</p>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">Json</span>
+            <a href="https://github.com/MiguelAndresGuerrero/TRABAJO_PYTHON_GUERREROMIGUEL.git" class="tag">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="./media/Imagen_Proyecto7.png" alt="APIs">
+        <div class="card-content">
+          <h2>APIS Menu</h2>
+          <p>This program facilitates the management and consultation of various APIs through an interactive menu,
+            optimizing access to information in real time</p>
+          <div class="tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <a href="https://github.com/MiguelAndresGuerrero/Menu-APIs.git" class="tag">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="./media/Imagen_Proyecto8.jpg" alt="E-commerce">
+        <div class="card-content">
+          <h2>Store</h2>
+          <p>In this project I replicated as best as possible a payment gateway with 3 products that are added to the
+            cart and the card balance is subtracted, a shopping list is also displayed</p>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <a href="https://github.com/MiguelAndresGuerrero/DIA-9.git" class="tag">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="./media/Imagen_Proyecto9.jpg" alt="Jardinería">
+        <div class="card-content">
+          <h2>Gardening</h2>
+          <p>The Gardening project is a database designed to manage information.
+            It includes tables for offices, employees, customers, orders and products,
+            allowing to efficiently organize and manage all key data</p>
+          <div class="tags">
+            <span class="tag">MySQL</span>
+            <a href="https://github.com/MiguelAndresGuerrero/JARDINERIA_MySQL.git" class="tag">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>My Skills</h2>
+    <div class="skills-container">
+
+      <div class="skill-box">
+        <div class="skill-header">
+          <i class="fas fa-code"></i>
+          <h3>Frontend Development</h3>
+        </div>
+        <p class="Skill-text">Creating responsive and interactive user interfaces with modern frameworks and libraries
+        </p>
+        <span class="Skills-purple">HTML5</span>
+        <span class="Skills-purple">CSS3</span>
+        <span class="Skills-purple">JavaScript</span>
+      </div>
+      <div class="skill-box">
+        <div class="skill-header">
+          <i class="fas fa-server"></i>
+          <h3>Backend Development</h3>
+        </div>
+        <p class="Skill-text">Building robust server-side applications and APIs to power web applications</p>
+        <span class="Skills-blue">Java</span>
+        <span class="Skills-blue">Python</span>
+      </div>
+
+      <div class="skill-box">
+        <div class="skill-header">
+          <i class="fas fa-database"></i>
+          <h3>Database & Storage</h3>
+        </div>
+        <p class="Skill-text">Managing and optimizing data storage solutions for web applications</p>
+        <span class="Skills-pink">MySQL</span>
+        <span class="Skills-pink">PostgreSQL</span>
+      </div>
+
+      <div class="skill-box">
+        <div class="skill-header">
+          <i class="fas fa-globe"></i>
+          <h3>DevOps & Deployment</h3>
+        </div>
+        <p class="Skill-text">Streamlining development workflows and deploying applications to production</p>
+        <span class="Skills-purple">Git</span>
+        <span class="Skills-purple">GitHub</span>
+        <span class="Skills-purple">Vercel</span>
+      </div>
+
+      <div class="skill-box">
+        <div class="skill-header">
+          <i class="fas fa-paint-brush"></i>
+          <h3>Design & UX/UI</h3>
+        </div>
+        <p class="Skill-text">Creating visually appealing and user-friendly interfaces and experiences</p>
+        <span class="Skills-blue">Figma</span>
+        <span class="Skills-blue">Canva</span>
+      </div>
+
+      <div class="skill-box">
+        <div class="skill-header">
+          <i class="fas fa-cogs"></i>
+          <h3>Soft Skills</h3>
+        </div>
+        <p class="Skill-text">Additional technical and soft skills that enhance my development capabilities</p>
+        <span class="Skills-pink">Adaptability</span>
+        <span class="Skills-pink">Communication</span>
+        <span class="Skills-pink">Receptiveness to criticism</span>
+        <span class="Skills-pink">Teamwork</span>
+        <span class="Skills-pink">Time management</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="contacts">Get In Touch</h2>
+    <div class="contact-container">
+      <div class="contact-info">
+        <h3>Send Me a Message</h3>
+        <p>If you have any questions, an exciting idea, or just want to chat, feel free to contact me. I'm always open
+          to new opportunities,
+          collaborations, and challenges that help us grow together.</p>
+        <p class="text-messge">¡Let's connect and create something amazing!</p>
         <div class="contact-icons">
-            <a href="mailto:Guerreromiguelmartinez@gmail.com" aria-label="Correo electrónico"> 
-                <img src="./media/Gmail.png" alt="Gmail" loading="lazy">
-            </a>
-            <a href="https://www.linkedin.com/in/miguel-guerrero-martinez-175845310/" target="_blank"
-                aria-label="Perfil de LinkedIn">
-                <img src="./media/Linkedin.png" alt="LinkedIn" loading="lazy">
-            </a>
-            <a href="https://github.com/MiguelAndresGuerrero" target="_blank" aria-label="Perfil de GitHub">
-                <img src="./media/GitHub.png" alt="GitHub" loading="lazy">
-            </a>
+          <a href="mailto:Guerreromiguelmartinez@gmail.com"><i class="fas fa-envelope"></i></a>
+          <a href="https://www.linkedin.com/in/miguel-guerrero-martinez-175845310/" target="_blank"><i
+              class="fab fa-linkedin"></i></a>
         </div>
-    </footer>
+      </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script src="Script.js"></script>
+      <div class="contact-form">
+        <h3>Send Me a Message</h3>
+        <form action="https://formspree.io/f/xyzejpjn" method="POST">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" placeholder="Your Email" required>
+          <label for="subject">Message Topic</label>
+          <input type="text" id="subject" name="subject" placeholder="Subject">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+          <button type="submit" class="send-btn"><i class="fas fa-paper-plane"></i> Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
 </body>
 
 </html>
